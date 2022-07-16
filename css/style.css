@@ -1,0 +1,420 @@
+
+.btn-backtotops {
+	background-color: #f23a3a;
+	color: white;
+	padding: 10px;
+	border-radius: 2px;
+
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	z-index: 5;
+}
+.btn-backtotops:hover{
+	color: white;
+}
+
+.lines1, 
+.lines2, 
+.lines3 {
+	width: 30px;
+	height: 4px;
+	border-radius: 3px;
+	background-color: white;
+	margin: 6px;
+}
+
+.navbar a{
+	color: white;
+}
+.navbar a:hover {
+	color: #f23a3a;
+}
+
+
+header{
+	height: 100vh;
+	background: linear-gradient(
+		20deg,
+		rgba(0, 0, 0, 1),
+		rgba(0, 0, 0, 0.5)
+		),  url('../assets/img/bg.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	transition: all 1s;
+}
+
+@keyframes bannersanimed {
+	0%{
+		transform: translateX(200px);
+	}
+	100%{
+		transform: translateX(0px);
+	}
+}
+@keyframes bannersani {
+	0%{
+		transform: translateX(-200px);
+	}
+	100%{
+		transform: translateX(0px);
+	}
+}
+
+
+
+.banners{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 100%;
+	transform: translate(-50%, -50%);
+	font-family: 'Raleway', sans-serif;
+	letter-spacing: 2.2px;
+}
+
+.banners .big{
+	animation-name: bannersani;
+	animation-duration: 1.5s;
+}
+.banners .med {
+	animation-name: bannersanimed;
+	animation-duration: 1.2s;
+}
+.banners h5{
+	animation-name: bannersanismall;
+}
+.banners button{
+		font-family: 'Raleway', sans-serif;
+		letter-spacing: 1.5px;
+}
+button.ones{
+	border: 2px solid white;
+	font-size: 12px;
+}
+
+button.twos{
+	font-size: 13px;
+}
+/*End header*/
+
+.about{
+	font-family: 'Raleway', sans-serif;
+}
+
+.fa-circle-play{
+	font-size: 40px;
+	padding-right: 10px;
+}
+.fa-feather, .fa-database, .fa-chart-column{
+	font-size: 40px;
+}
+
+/*____________________________________*/
+
+.aboutpercents{
+	position: relative;
+}
+.percents{
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	font-size: 12px;
+	top: 35px;
+}
+.one{
+	left: 80%;
+}
+.two{
+	left: 95%;
+}
+.three{
+	left: 85%;
+}
+.four{
+	left: 90%;
+}
+.boxes{
+	background-color:#f1f1f1 ;
+}
+.missions{
+	background-color: white;
+}
+
+/*__________________________________*/
+
+.elonmasks {
+	height: 50vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	text-align: center;
+	letter-spacing: 1px;
+
+	background: linear-gradient(
+		20deg,
+		rgba(0, 0, 0, 1),
+		rgba(22,13,4, 0.5)
+		),  url('../assets/img/lighthouse.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+.elonmasks p{
+	width: 500px;
+}
+
+@media(minwidth:300px) {
+	.elonmasks p{
+	width: 300px;
+	}
+}
+
+/*________________________*/
+
+/*Start portfolio*/
+#portfolio .portlists{
+	cursor: pointer;
+}
+#portfolio .active{
+	text-decoration: underline;
+	color: tomato;
+}
+
+.port-imgs img{
+	width: 250px;
+	margin: 20px 30px;
+	transition: transform 0.4s;
+}
+.port-imgs img:hover{
+	transform: scale(1.2);
+}
+
+/*______*/
+
+.rainings {
+	/*height: 50vh;*/
+
+	/*display: flex;
+	justify-content: center;
+	align-items: center;*/
+
+	background: linear-gradient(
+		20deg,
+		rgba(0, 0, 0, 0.4),
+		rgba(22,13,4, 0.8)
+		),  url('../assets/img/rainings.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+.icons{
+	font-size: 34px;
+}
+.rainings h2{
+	font-size: 38px;
+}
+
+/*End portfolio*/
+
+/*Start awesome features*/
+.cards{
+	padding: 20px;
+}
+.cards:nth-of-type(even) {
+	background-color: #f1f1f1;
+}
+.cards:nth-of-type(odd) {
+	border: 1px solid #f1f1f1;
+}
+.cards i{
+	font-size: 22px;
+}
+
+/* Start servies */
+#service{
+	background: linear-gradient(
+		20deg,
+		rgba(0, 0, 0, 0.4),
+		rgba(22,13,4, 0.8)
+		),  url('../assets/img/building.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	padding: 10px;
+}
+#service .paragraph{
+	letter-spacing: 1.5px;
+}
+#service .italic{
+	font-size: 20px;
+}
+
+.servicecards{
+	background-color: rgba(101,115,103,0.3);
+	color: white;
+	margin-bottom: 16px;
+}
+/* End servies */
+
+/*Start team*/
+.teammembers img{
+	width: 200px;
+	border-radius: 50%;
+	margin-bottom: 14px;
+}
+
+/* End team */
+
+#price{
+	background-color: #f1f1f1;
+	padding: 20px;
+}
+.pricecard{
+	background-color: white;
+	border-radius: 5px;
+	padding: 30px 20px;
+}
+
+/*End price*/
+
+#customers{
+	background: linear-gradient(
+		150deg,
+		rgba(0, 0, 0, 0.8),
+		rgba(0, 1, 0, 0.2)
+		),  url('../assets/img/city.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+}
+.carousel-item img{
+	width: 150px;
+	border-radius: 50%;
+	border: 3px solid #e2e2e2;
+	margin-bottom: 8px;
+}
+
+/*End customers*/
+
+
+/*Start blog section*/
+#blog{
+	background-color: #f1f1f1;
+}
+.blogcards{
+	margin-top: -10px;
+	padding: 10px;
+	background-color: white;
+
+	border-left: 1px solid #e2e2e2;
+	border-right: 1px solid #e2e2e2;
+	border-bottom: 1px solid #e2e2e2;
+
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+
+	box-shadow: -1px 1px 4px rgba(0, 0, 0, 0.4);
+}
+.datetitles{
+	position: relative;
+}
+.newsimages{
+	width: 100%;
+	transition: all 0.5s;
+	margin-bottom: 10px;
+}
+.newsimages:hover {
+	opacity: 0.7;
+}
+
+@media(minwidth: 400px ) {
+	.newsimages:hover {
+	transform: scale(1.2);
+	}
+}
+.servicetexts{
+	width: 14%;
+	background-color: black ;
+	color: white;
+	border-radius: 3px;
+	padding: 3px ;
+
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	z-index: 3;
+}
+
+/*End BLog*/
+
+/*Start Map and Form*/
+
+.nameemaildivs{
+	display: flex;
+	width: 100%;
+}
+input#name, input#email{
+	display: inline-block;
+	/*width: 40%;*/
+	background-color: #e2e2e2;
+}
+
+input#subject{
+	width: 97%;
+	background-color: #e2e2e2;
+}
+
+textarea {
+	padding: 10px;
+	border: none;
+	border-radius: 10px;
+	background-color: #e2e2e2;
+}
+form button{
+	margin-left: 40%;
+}
+/*End Map and Form */
+
+/*Start contact*/
+
+#contact{
+	background: linear-gradient(
+		20deg,
+		rgba(0, 0, 0, 0.4),
+		rgba(22,13,4, 0.8)
+		),  url('../assets/img/rainings.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+.contactcards {
+	width: 300px;
+	height: 180px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(127,127,127,0.4);
+	border-radius: 10px;
+	margin: 70px 0;
+}
+.contactcards i {
+	font-size: 30px;
+	padding: 0 20px 0 0 ;
+}
+.contactcards a{
+	text-decoration: none;
+	color: white;
+}
+.footers {
+	background-color: #303030;
+}
